@@ -7,6 +7,11 @@ sch: https://www.google.com/search?q=windows+ssh-copy-id , https://www.google.co
 ## manually:
 https://chrisjhart.com/Windows-10-ssh-copy-id/
 
+powershell:
+```
+type $env:USERPROFILE\.ssh\id_rsa.pub | ssh {IP-ADDRESS-OR-FQDN} "cat >> .ssh/authorized_keys"
+```
+
 ## Cygwin
 ```
 choco install cygwin
